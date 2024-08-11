@@ -1,24 +1,25 @@
 SET GLOBAL local_infile = true;
 CREATE DATABASE IF NOT EXISTS spotify;
 USE spotify;
-
+set unique_checks = 0;
 CREATE TABLE songs (
     id INT PRIMARY KEY NOT NULL,
     track_id varchar(255) NOT NULL,
+    track_name varchar(255) NOT NULL,
     track_artist varchar(255) NOT NULL,
     track_popularity INT NOT NULL,
     track_album_id varchar(255) NOT NULL,
     track_album_name varchar(255) NOT NULL,
-    track_album_release_date varchar(255) NOT NULL,
+    track_album_release_date DATE NOT NULL,
     playlist_name varchar(255) NOT NULL,
     playlist_id varchar(255) NOT NULL,
     playlist_genre varchar(255) NOT NULL,
     playlist_subgenre varchar(255) NOT NULL,
     danceability double(5,4) NOT NULL,
     energy double(5,4) NOT NULL,
+    kkey int not null,
     loudness double(5,4) NOT NULL,
     mode INT NOT NULL,
-    kkey int not null,
     speechiness double(5,4) NOT NULL,
     acousticness double(5,4) NOT NULL,
     instrumentalness double(5,4) NOT NULL,
