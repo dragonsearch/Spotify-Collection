@@ -1,0 +1,1 @@
+cat ./sql_loading_table/*.sql | sudo mysql -u root -p --local_infile=1 
