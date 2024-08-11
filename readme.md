@@ -70,12 +70,12 @@ I see you are interested on the **why** and not the what or the how:
 
 It is a composite primary key (2 values to form the key). Given that there are no identifiers in that dataset and songs names can (and are) repeated. I opted for a composite primary key of song, author.
 
-# As for the `load_tables.sh`. Why are you just not calling 4 times to those files or using another more complex approach?
+## As for the `load_tables.sh`. Why are you just not calling 4 times to those files or using another more complex approach?
 
 It is up for improvement. If you are interested on improving that part (or any part feel free to reach me out, open an issue or whatever other method you prefer). At the moment, it is not a priority.
 
 `cat ./sql_loading_table/*.sql | sudo mysql -u root -p --local_infile=1` This line will input all the files to MYSQL in alphabetical order (that's why tracks_**Z**artists.sql) is named like that. Right now, it is enough to handle the small number of files.
 
-# Where is the data analysis? 
+## Where is the data analysis? 
 
 `TODO`
