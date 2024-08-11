@@ -79,3 +79,5 @@ It is up for improvement. If you are interested on improving that part (or any p
 ## Where is the data analysis? 
 
 `TODO`
+## I want to help in any form or add possible questions:
+I appreaciate it! Reach out to me or use the issues page
